@@ -9,6 +9,6 @@ router.get("/", (_, res) => {
     res.send("Hello, world!");
 });
 //validacao e depois criacao de dados
-router.post('/cidades', CidadesController.createBodyValidator, CidadesController.createQueryValidator, CidadesController.create);
+router.post('/cidades', CidadesController.createValidation, CidadesController.create);
 export { router };
 
