@@ -8,7 +8,10 @@ const router = Router();
 router.get("/", (_, res) => {
     res.send("Hello, world!");
 });
+
+router.get('/cidades', CidadesController.getAllValidation, CidadesController.getAll);
 //validacao e depois criacao de dados
 router.post('/cidades', CidadesController.createValidation, CidadesController.create);
+
 export { router };
 
