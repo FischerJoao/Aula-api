@@ -1,3 +1,13 @@
 /node_modules
 .env
 /build
+/coverage
+test-results/
+
+# Arquivos de cache do Jest
+jest-cache/
+jest-config/
+
+# Arquivos de configuração do Jest
+jest.config.js
+jest.config.ts

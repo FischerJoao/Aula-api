@@ -15,5 +15,13 @@
     "strictNullChecks": true,
     "removeComments": true,
     "sourceMap": true
-  }
+  },
+  "exclude": [
+    "jest.config.js",
+    "jest.config.ts",
+    "node_modules",
+    "tests",
+    "build"
+  ],
+  "include": ["src/**/*.ts", "jest.config.ts"]
 }
